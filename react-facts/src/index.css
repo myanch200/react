@@ -1,0 +1,43 @@
+
+:root {
+  --blue: #61DAFB;
+  --darker-gray: #21222A;
+  
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', sans-serif;
+}
+
+.blue {
+  color: var(--blue);
+}
+
+.nav-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--darker-gray);
+  padding: 1.5rem;
+  color: white;
+
+}
+.nav-logo-wrapper{
+  display: flex;
+  align-items: center;
+}
+
+.nav-react-logo {
+  width: 60px;
+  margin-right: 1rem;;
+}
+
+.extra-title {
+  font-weight: 600;
+}
