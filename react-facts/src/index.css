@@ -1,7 +1,7 @@
 :root {
   --blue: #61DAFB;
   --darker-gray: #21222A;
-
+  --gray: #33373E;
 }
 
 * {
@@ -25,6 +25,7 @@ body {
   background-color: var(--darker-gray);
   padding: 1.5rem;
   color: white;
+  margin-bottom: 0;
 
 }
 
@@ -46,4 +47,20 @@ body {
 
 .extra-title {
   font-weight: 600;
+}
+
+.content {
+  padding: 2rem;
+  background-color: var(--gray);
+  color: white;
+  min-height: 100vh;
+}
+
+.main-title {
+  margin:0;
+  font-size: 3rem;
+}
+
+.fact-item {
+  padding: 1rem;
 }
