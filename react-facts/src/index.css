@@ -1,8 +1,7 @@
-
 :root {
   --blue: #61DAFB;
   --darker-gray: #21222A;
-  
+
 }
 
 * {
@@ -28,14 +27,21 @@ body {
   color: white;
 
 }
-.nav-logo-wrapper{
+
+.nav-logo-wrapper {
   display: flex;
   align-items: center;
 }
 
 .nav-react-logo {
   width: 60px;
-  margin-right: 1rem;;
+  margin-right: 1rem;
+  ;
+}
+
+.logo-title {
+  font-weight: 700;
+  font-size: x-large;
 }
 
 .extra-title {
