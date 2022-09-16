@@ -60,6 +60,7 @@ main {
   overflow-x: auto;
   flex-wrap: nowrap;
   margin: 0 auto;
+  padding: 2rem;
 }
 .event-card {
   position: relative;
