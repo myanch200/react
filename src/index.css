@@ -1,5 +1,5 @@
 :root {
-  --lighter-gray: #23252C;
+  --lighter-gray: #3A3B42;
   --darker-gray: #1A1B21;
   --blue: #5093E2;
   --orange: #F3BF99;
@@ -13,8 +13,95 @@
 
 body {
  min-height: 100vh;
- background-color: var(--darker-gray);
+ background-color: var(--lighter-gray);
  display: grid;
  justify-content: center;
  align-content: center;
+}
+
+main {
+  background-color: var(--darker-gray);
+  max-width: 500px;
+  color: white;
+  border-radius: 1rem;
+
+}
+
+.info-section {
+  display: flex;
+  flex-flow: column wrap;
+  gap: 1rem;
+  max-width: 100%;
+  text-align: center;
+
+
+}
+
+.info-section--profile-photo {
+  max-width: 100%;
+  border-radius: 10px 10px 0 0;
+}
+
+.info-section--name {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.info-section--position-title {
+  font-weight: 500;
+  color: var(--orange);
+}
+
+
+
+.info-section--social-links {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.info-section--links  {
+  width: 30%;
+  padding: 0.5rem;
+  font-size: 1.2rem;
+  font-weight:  600;
+  border-radius: 10px;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+
+}
+
+.info-section--email {
+  background-color: white;
+  color: var(--darker-gray);
+ 
+}
+
+.info-section--linkedin {
+  background-color: var(--blue);
+}
+
+.about-section {
+  max-width: 80%;
+  margin: 0 auto;
+  padding: 2rem;
+
+}
+.about-section--title {
+  margin-block: 1rem;
+}
+
+footer {
+  padding: 2rem;
+  background-color: #161619 ;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.footer--icon {
+  width: 40px;
+  height: 40px;
 }

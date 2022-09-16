@@ -10,12 +10,12 @@ import './App.css'
 function App() {
 
   return (
-    <div className="App">
+    <main className="App">
       <Info/>
       <About />
       <Interests />
       <Footer />
-    </div>
+    </main>
   )
 }
 
