@@ -6,7 +6,9 @@ export class Interests extends Component {
       <section className="about-section">
         <h2 className="about-section--title">Interests</h2>
         <p className="about-section--description">
-          Food expert. Music scholar. Reader. Internet fanatic. Bacon buff. Entrepreneur. Travel geek. Pop culture ninja. Coffee fanatic.
+          I love reading books, watching movies and playing games.
+          Currently spending my free time building side projects and learning more about react.
+          My favourite food is pizza.
         </p>
       </section>
     )
