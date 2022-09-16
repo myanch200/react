@@ -1,5 +1,6 @@
 * {
   box-sizing: border-box;
+  margin: 0;
 }
 
 body {
@@ -33,15 +34,43 @@ main {
 }
 
 .hero-section--content {
+  margin-block: 2rem;
   padding: 2rem;
-  max-width: 30%;
+
 }
 
 .hero-section--title {
   font-weight: 700;
-  font-size:  2.5rem;
+  font-size: 2.5rem;
 }
+
 .hero-section--paragraph {
   font-weight: 400;
   font-size: 1.5rem;
+  max-width: 40%;
+}
+
+
+
+/* CARD */
+.event-card {
+  position: relative;
+  display: flex;
+  flex-flow: column wrap;
+  max-width: 200px;
+}
+
+.card--status-badge {
+  background-color: white ;
+  position: absolute;
+  top: 0.5rem;
+  left: 1rem;
+  padding-inline: 10px;
+  padding-block: 5px;
+  border-radius: 10px;
+}
+
+.card-raiting {
+  display: flex;
+  gap: 5px;
 }
