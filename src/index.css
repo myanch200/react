@@ -4,6 +4,11 @@
 
 body {
   margin: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+main {
+  padding: 2rem;
 }
 
 .header--nav-bar {
@@ -15,4 +20,28 @@ body {
 .nav-bar--logo {
   max-width: 100px;
   max-height: 100px;
+}
+
+.hero-section {
+  display: flex;
+  flex-flow: column wrap;
+}
+
+.hero-section--photo-grid {
+  max-width: 50%;
+  margin: 0 auto;
+}
+
+.hero-section--content {
+  padding: 2rem;
+  max-width: 30%;
+}
+
+.hero-section--title {
+  font-weight: 700;
+  font-size:  2.5rem;
+}
+.hero-section--paragraph {
+  font-weight: 400;
+  font-size: 1.5rem;
 }

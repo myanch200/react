@@ -1,12 +1,16 @@
 import React, { useState } from 'react'
 import NavBar from './components/NavBar'
+import HeroComponent from './components/HeroComponent'
 function App() {
 
   return (
     <React.Fragment>
-      <header>
         <NavBar />
-      </header>
+        <main>
+
+        <HeroComponent />
+        </main>
+
     </ React.Fragment>
   )
 }
