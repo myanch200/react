@@ -1,22 +1,30 @@
 import React from 'react'
-import zaferesPhoto from '../assets/zaferes.png'
+
 import starIcon from '../assets/star.svg'
-export default function Card() {
+export default function Card(props) {
+  let item = props.item
+  let badgeText
+  if (item.openSpots === 0) {
+      badgeText = "SOLD OUT"
+  } else if (item.location === "Online") {
+      badgeText = "ONLINE"
+  }
+  
   return (
     <div className='event-card'>
-      <img src={zaferesPhoto} alt="" />
-      <div className="card--status-badge">SOLD OUT</div>
+      <img className="card--image" src={item.coverImg} alt={item.title} />
+      {badgeText && <div className="card--status-badge">{badgeText}</div>}
       <div className="card-raiting">
         <img src={starIcon} alt="star" />
-        <p>5</p>
-        <p>(6)</p>
-        <p>USA</p>
+        <p>{item.stats.rating}</p>
+        <p>{item.stats.reviewCount}</p>
+        <p>{item.country}</p>
       </div>
       <div className="card-details">
         <p className="card--description">
-          Life lessons with Katie Zaferes
+         {item.title}
         </p>
-        <p className="card--price"><strong>From $136</strong>/ person</p>
+        <p className="card--price"><strong>From ${item.price}</strong>/ person</p>
       </div>
     </div>
   )

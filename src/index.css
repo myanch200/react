@@ -52,12 +52,22 @@ main {
 
 
 
-/* CARD */
+/* CARDS */
+
+.cards-list {
+  display: flex;
+  gap: 2rem;
+  overflow-x: auto;
+  flex-wrap: nowrap;
+  margin: 0 auto;
+}
 .event-card {
   position: relative;
   display: flex;
-  flex-flow: column wrap;
+  flex-flow: column;
   max-width: 200px;
+  flex: 0 0 auto;
+
 }
 
 .card--status-badge {
@@ -67,6 +77,11 @@ main {
   left: 1rem;
   padding-inline: 10px;
   padding-block: 5px;
+  border-radius: 10px;
+}
+
+.card--image {
+  max-width: 100%;
   border-radius: 10px;
 }
 
