@@ -1,5 +1,5 @@
 import { useState } from 'react'
-
+import Navbar from './components/Navbar'
 
 
 function App() {
@@ -7,7 +7,7 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Meme generator</h1>
+      <Navbar />
     </div>
   )
 }

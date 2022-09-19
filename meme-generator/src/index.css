@@ -1,0 +1,55 @@
+:root {
+  --blue: #61DAFB;
+  --darker-gray: #21222A;
+  --gray: #282D35;
+  --purple: #672280;
+  --lighter-purple: #A626D3;
+}
+  
+* {
+  box-sizing: border-box;
+}
+  
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Karla', sans-serif;
+  background-color: var(--gray);
+ 
+} 
+
+.bg-purple-gradient {
+  background: linear-gradient(90deg, #672280 1.18%, #A626D3 100%);
+}
+
+.nav-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5rem;
+  color: white;
+  margin-bottom: 0;
+  
+}
+
+.nav-logo-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.nav-logo-title {
+  font-size: 24px;
+  line-height: 29px;
+  font-weight: 700;
+
+}
+.nav-react-logo {
+  width: 60px;
+  margin-right: 1rem;
+  ;
+}
+
+.extra-title {
+  font-weight: 600;
+}
+  
